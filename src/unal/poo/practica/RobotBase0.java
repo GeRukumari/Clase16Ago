@@ -21,6 +21,9 @@ public class RobotBase
             //Definicion de la ubicacion del robot, Ciudad, posicion, Direccion, Numero things en el bolso.
             estudiante = new Robot(objetos,0, 2, Direction.EAST,10);
             
+                   
+            
+            /* RESTO DE FUNCIONES FUERA DE LA PLANTILLA
 	    //Mover una interseccion en el sentido al cual este apuntando el objeto.
             estudiante.move ();
             
@@ -55,6 +58,7 @@ public class RobotBase
         public static void creacionFuncion(int parametroEntrada){
             for (int i = 0; i < parametroEntrada; i++) 
                 estudiante.move();
+*/
         }
 }
 
