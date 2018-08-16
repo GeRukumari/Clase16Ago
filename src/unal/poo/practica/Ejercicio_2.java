@@ -1,11 +1,12 @@
 package unal.poo.practica;
 
 import becker.robots.*;
+import static unal.poo.practica.Ejercicio_1.estudiante;
 
 /** 
  * Practica de los conceptos de Programacion Estructurada
  * @author Fabian Andres Giraldo */
-public class Ejercicio_1
+public class Ejercicio_2
 {    
        //Declaracion de Variables -- Forma temporal - No es buena practica tener
        //variables estaticas
@@ -14,23 +15,28 @@ public class Ejercicio_1
         
 	public static void main (String[] args){
             //Declarar la creacion de la ciudad
-            objetos = new City("Field_1.txt");
+            objetos = new City("Field_2.txt");
 	    objetos.showThingCounts(true);
             
             //Direction.NORTH, EAST, SOUTH, WEST
             //Definicion de la ubicacion del robot, Ciudad, posicion, Direccion, Numero things en el bolso.
-            estudiante = new Robot(objetos,0, 2, Direction.WEST,10);
-            
+            estudiante = new Robot(objetos,1, 2, Direction.EAST,10);
+            giraRobot(2);
+            mueveRobot(1);
+            giraRobot(1);
+            mueveRobot(1);
+            giraRobot(1);
+            mueveRobot(1);
+            estudiante.canPickThing();
+            estudiante.pickThing();
             giraRobot(2);
             mueveRobot(1);
             giraRobot(3);
-            mueveRobot(3);
+            mueveRobot(1);
             giraRobot(3);
-            mueveRobot(3);
-            giraRobot(3);
-            mueveRobot(3);
-            giraRobot(3);       
-            mueveRobot(2);
+            mueveRobot(1);
+            
+                   
 	}
         
         public static void mueveRobot(int parametroEntrada){
@@ -43,6 +49,6 @@ public class Ejercicio_1
                 estudiante.turnLeft();
 
         }
-
+        
 }
 

@@ -14,7 +14,7 @@ public class RobotBase
         
 	public static void main (String[] args){
             //Declarar la creacion de la ciudad
-            objetos = new City("Field.txt");
+            objetos = new City("Field_1.txt");
 	    objetos.showThingCounts(true);
             
             //Direction.NORTH, EAST, SOUTH, WEST
